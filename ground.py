@@ -1,4 +1,5 @@
 import random
+import os
 
 screen = []
 chars = ["#", ";", ":", "=", "$"]
@@ -21,3 +22,8 @@ def gen_ground():
             for length in range(os.get_terminal_size()[0]): # Below the ground, we generate a lot of # to fill the ground
                 temp += random.choice(chars)
             screen.append(temp)
+
+# FOR TESTING ONLY
+gen_ground()
+for read in screen:
+    print(read)

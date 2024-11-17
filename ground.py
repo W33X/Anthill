@@ -1,8 +1,7 @@
-import os
-import sys
-import time
+import random
 
 screen = []
+chars = ["#", ";", ":", "=", "$"]
 
 # This scary looking thing generates the ground
 def gen_ground():
@@ -20,5 +19,5 @@ def gen_ground():
     
         else:
             for length in range(os.get_terminal_size()[0]): # Below the ground, we generate a lot of # to fill the ground
-                temp += "#"
+                temp += random.choice(chars)
             screen.append(temp)

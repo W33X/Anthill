@@ -1,6 +1,6 @@
 import random
 
-#characters
+#slaves
 ant_alive = ""
 ant_dead = ""
 ant_queen = ""

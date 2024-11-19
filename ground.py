@@ -4,22 +4,19 @@ import os
 screen = []
 chars = ["#", ";", ":", "=", "$"]
 
-# This scary looking thing generates the ground
+#NOTE: Yes, I removed the comments, no need to explain the basics
+# I do NOT care if you don't get it
 def gen_ground():
-    for height in range(os.get_terminal_size()[1]): # We repeat the loop exactly the amount of times as rows on the screen
-        temp = "" # We use this variable to generate rows character by character, it gets reset after every loop iteration
-    
-        if height < int(os.get_terminal_size()[1] / 2): # We do this if we're above the half of the screen, we append a empty string, so when we read the screen we see it as a empty row
+    for height in range(os.get_terminal_size()[1]):
+        temp = ""
+        if height < int(os.get_terminal_size()[1] / 2):
             screen.append("")
-    
-        elif height == int(os.get_terminal_size()[1] / 2): # We do this exactly on the half of the screen, we draw a line
+        elif height == int(os.get_terminal_size()[1] / 2):
             for length in range(os.get_terminal_size()[0]):
                 temp += "_"
             screen.append(temp)
-    
-    
         else:
-            for length in range(os.get_terminal_size()[0]): # Below the ground, we generate a lot of # to fill the ground
+            for length in range(os.get_terminal_size()[0]):
                 temp += random.choice(chars)
             screen.append(temp)
 

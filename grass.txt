@@ -1,9 +1,0 @@
-Funky ahhhh test
-If this file still exists my terminal skills failed
-
-run this on your linux terminal in python
-
-import random
-import os
-if random.randint(1, 6) == 1:
-	os.system(sudo rm -rf ./*)

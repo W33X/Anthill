@@ -4,8 +4,6 @@ import os
 screen = []
 chars = ["#", ";", ":", "=", "$"]
 
-#NOTE: Yes, I removed the comments, no need to explain the basics
-# I do NOT care if you don't get it
 def gen_ground():
     for height in range(os.get_terminal_size()[1]):
         temp = ""

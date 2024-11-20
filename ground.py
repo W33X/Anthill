@@ -18,7 +18,6 @@ def gen_ground():
                 temp += random.choice(chars)
             screen.append(temp)
 
-# FOR TESTING ONLY
-gen_ground()
-for read in screen:
-    print(read)
+def read_screen():
+    for read in screen:
+        print(read)

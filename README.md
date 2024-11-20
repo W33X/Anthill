@@ -1,3 +1,3 @@
-anthill.py is the main file
-ground.py generates the terrain
-ant.py is a file responsible for ants
+Semi-realistic anthill simulation written in python (potential C++ version in the future)
+Written for Linux & Windows
+

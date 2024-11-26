@@ -17,7 +17,7 @@ def gen_ground():
                 if sys.platform == "linux":
                     temp += "\033[32m_\033[m"
                 else:
-                    temp += "_"
+                    temp += "\033[32m_\033[m"
             screen.append(temp)
         else:
             for length in range(os.get_terminal_size()[0]):

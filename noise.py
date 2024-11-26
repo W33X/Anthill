@@ -4,7 +4,7 @@ import os #Temporary, obviouisly
 import time
 import sys
 
-grow area = 5
+grow_area = 5 # You wrote grow area as the variable name instead of grow_area and used it everywhere else so I changed it (delete this comment)
 
 def noise_start():
     noise_map = []
